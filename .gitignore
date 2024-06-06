@@ -1,0 +1,167 @@
+# Créé par https://www.toptal.com/developers/gitignore/api/androidstudio,android
+# Modifier sur https://www.toptal.com/developers/gitignore?templates=androidstudio,android
+
+### Android ###
+# Fichiers Gradle
+.gradle/
+construire/
+
+# Fichier de configuration local (chemin SDK, etc.)
+local.propriétés
+
+# Fichiers journaux/OS
+*.enregistrer
+
+# Fichiers et dossiers générés par Android Studio
+capture/
+.externalNativeBuild/
+.cxx/
+*.apk
+sortie.json
+
+#IntelliJ
+*.iml
+.idée/
+misc.xml
+déploiementTargetDropDown.xml
+rendu.experimental.xml
+
+# Fichiers du magasin de clés
+*.jks
+*.keystore
+
+# Services Google (par exemple API ou Firebase)
+google-services.json
+
+# Profilage Android
+*.hprof
+
+### Correctif Android ###
+gen-external-apklibs
+
+# Remplacement des répertoires .externalNativeBuild introduit
+# avec Android Studio 3.5.
+
+### AndroidStudio ###
+# Couvre les fichiers à ignorer pour le développement Android à l'aide d'Android Studio.
+
+# Création de fichiers d'application
+*.ap_
+*.aab
+
+# Fichiers pour la VM ART/Dalvik
+*.dex
+
+# Fichiers de classe Java
+*.classe
+
+# Fichiers générés
+poubelle/
+génération/
+dehors/
+
+# Fichiers Gradle
+.gradle
+
+# Signature de fichiers
+.signature/
+
+# Fichier de configuration local (chemin SDK, etc.)
+
+# Dossier Proguard généré par Eclipse
+proguard/
+
+# Fichiers journaux
+
+#Androïd Studio
+/*/construire/
+/*/local.propriétés
+/*/dehors
+/*/*/construire
+/*/*/production
+.la navigation/
+*.ipr
+*~
+*.swp
+
+# Fichiers du magasin de clés
+
+# Services Google (par exemple API ou Firebase)
+# google-services.json
+
+# Correctif Android
+
+# Dossier de construction natif externe généré dans Android Studio 2.2 et versions ultérieures
+.externalNativeBuild
+
+#NDK
+obj/
+
+# IDÉE IntelliJ
+*.iws
+/dehors/
+
+# Configurations spécifiques à l'utilisateur
+.idea/caches/
+.idea/bibliothèques/
+.idée/étagère/
+.idea/espace de travail.xml
+.idea/tâches.xml
+.idée/.nom
+.idea/compilateur.xml
+.idea/copyright/profiles_settings.xml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/scopes/scope_settings.xml
+.idée/dictionnaires
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+.idea/datasources.xml
+.idea/dataSources.ids
+.idea/sqlDataSources.xml
+.idea/dynamique.xml
+.idea/uiDesigner.xml
+.idea/assetWizardSettings.xml
+.idea/gradle.xml
+.idea/jarRepositories.xml
+.idea/navEditor.xml
+
+# Fichiers de projet Eclipse hérités
+.chemin de classe
+.projet
+.cproject
+.paramètres/
+
+# Outils mobiles pour Java (J2ME)
+.mtj.tmp/
+
+# Fichiers du package #
+*.guerre
+*.oreille
+
+# journaux de crash de machine virtuelle (Référence : http://www.java.com/en/download/help/error_hotspot.xml)
+hs_err_pid*
+
+## Fichiers spécifiques au plugin :
+
+# plugin mpeltonen/sbt-idea
+.idea_modules/
+
+#Plugin JIRA
+atlassian-ide-plugin.xml
+
+# Plugin Mongo Explorer
+.idea/mongoSettings.xml
+
+# Plugin Crashlytics (pour Android Studio et IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.propriétés
+crashlytics-build.properties
+tissu.propriétés
+
+### Correctif AndroidStudio ###
+
+!/gradle/wrapper/gradle-wrapper.jar
+
+# Fin de https://www.toptal.com/developers/gitignore/api/androidstudio,android
