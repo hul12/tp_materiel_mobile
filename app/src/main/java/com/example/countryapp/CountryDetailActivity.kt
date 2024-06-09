@@ -15,7 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.countryapp.ui.theme.MyApplicationTheme
 import com.example.myapplication.R
-import com.squareup.picasso.Picasso
+import com.bumptech.glide.Glide
 
 // CountryDetailActivity.kt
 class CountryDetailActivity : AppCompatActivity() {
@@ -29,25 +29,8 @@ class CountryDetailActivity : AppCompatActivity() {
         country?.let {
             findViewById<TextView>(R.id.countryDetailName).text = it.name
             findViewById<TextView>(R.id.countryDetailCapital).text = it.capital
-            Picasso.get().load(it.flag).into(findViewById<ImageView>(R.id.countryDetailFlag))
+            Glide.with(this).load(it.flag).into(findViewById<ImageView>(R.id.countryDetailFlag))
         }
     }
 }
 
-
-
-@Composable
-fun Greeting2(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview2() {
-    MyApplicationTheme {
-        Greeting2("Android")
-    }
-}

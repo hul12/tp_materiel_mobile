@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
-import com.squareup.picasso.Picasso
+import com.bumptech.glide.Glide
 
 class CountryAdapter(private val countries: List<Country>, private val onClick: (Country) -> Unit) :
     RecyclerView.Adapter<CountryAdapter.CountryViewHolder>() {
@@ -26,7 +26,7 @@ class CountryAdapter(private val countries: List<Country>, private val onClick: 
     override fun onBindViewHolder(holder: CountryViewHolder, position: Int) {
         val country = countries[position]
         holder.name.text = country.name
-        Picasso.get().load(country.flag).into(holder.flag)
+        Glide.with(holder.itemView.context).load(country.flag).into(holder.flag)
         holder.itemView.setOnClickListener { onClick(country) }
     }
 

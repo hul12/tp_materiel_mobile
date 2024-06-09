@@ -19,7 +19,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.countryapp.ui.theme.MyApplicationTheme
 import com.example.myapplication.R
-import com.squareup.picasso.Picasso
+import com.bumptech.glide.Glide
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
             if (countryName.isNotEmpty()) {
                 getCountryInfo(countryName) { country ->
                     countryNameTextView.text = country.name.common
-                    Picasso.get().load(country.flags.png).into(countryFlagImageView)
+                    Glide.with(this).load(country.flags.png).into(countryFlagImageView)
                 }
             } else {
                 Toast.makeText(this, "Please enter a country name", Toast.LENGTH_SHORT).show()
