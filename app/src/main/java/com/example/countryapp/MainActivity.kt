@@ -2,6 +2,7 @@ package com.example.countryapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
@@ -77,8 +78,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        findViewById<RecyclerView>(R.id.recyclerView).adapter = adapter
         findViewById<RecyclerView>(R.id.recyclerView).layoutManager = LinearLayoutManager(this)
+        findViewById<RecyclerView>(R.id.recyclerView).adapter = adapter
+        Log.d("adapter", "adapter passé")
+
 
         viewModel.countries.observe(this, Observer {
             adapter = CountryAdapter(it) { country ->
