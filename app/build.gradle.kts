@@ -54,7 +54,7 @@ android {
 dependencies {
 
     implementation("androidx.core:core-ktx:1.13.2")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.0")
     implementation("androidx.activity:activity-compose:1.9.0")
     implementation(platform("androidx.compose:compose-bom:2023.08.00"))
     implementation("androidx.compose.ui:ui")
@@ -69,13 +69,12 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
-    implementation ("androidx.appcompat:appcompat:1.2.0")
+    implementation ("androidx.appcompat:appcompat:1.6.0")
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation ("androidx.recyclerview:recyclerview:1.1.0")
     implementation ("androidx.room:room-runtime:2.2.5")
     implementation ("org.jetbrains.kotlin:kotlin-parcelize-runtime")
-
     implementation("com.github.bumptech.glide:glide:4.12.0")
     kapt("com.github.bumptech.glide:compiler:4.12.0")
 
